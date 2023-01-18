@@ -13,4 +13,4 @@ kiwisolver==1.4.4
 numpy 
 pandas
 urllib3
-gunicornm
+gunicorn
