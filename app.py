@@ -11,6 +11,8 @@ import dash_bootstrap_components as dbc  # pip install dash-bootstrap-components
 from datetime import date
 import plotly.express as px
 
+import boto3
+
 # from wordcloud import wordcloud
 
 
@@ -546,7 +548,7 @@ def update_horizontal_chart(start_date, end_date, value_chosen):
             paper_bgcolor="#E0E1E0",
             plot_bgcolor="#E0E1E0",
             legend={"bgcolor": "#F6F6F6"},
-            margin=dict(l=250),
+            margin=dict(l=150, b = 180),
         ),
     }
 
@@ -596,7 +598,7 @@ def update_line_chart(start_date, end_date, value_chosen):
     fig_line.update_traces(mode="markers+lines", connectgaps=True, hovertemplate=None)
     fig_line.update_layout(hovermode="x")
     fig_line.update_layout(
-        margin=dict(l=20, t= 20),
+        margin=dict(l = 100, t= 100, r = 100),
         # r=20, t=30, b=20),
         yaxis=dict(
             title="<b>Frequency</b>",
@@ -640,6 +642,7 @@ def update_line_chart(start_date, end_date, value_chosen):
             bordercolor="#058B54",
             borderwidth=1,
         ),
+        
     )
 
     return fig_line
