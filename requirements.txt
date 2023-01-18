@@ -11,6 +11,6 @@ Jinja2
 jmespath==1.0.1
 kiwisolver==1.4.4
 numpy 
-pandas==1.4.4
-urllib3==1.26.13
+pandas
+urllib3
 gunicornm
