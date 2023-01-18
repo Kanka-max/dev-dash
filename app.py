@@ -16,7 +16,7 @@ import plotly.express as px
 
 ########################################## READING IN THE DATA ##########################################
 
-path = "Data/"  # Change path to your data path
+path = "https://github.com/Kanka-max/dev-dash/blob/main/Data/"  # Change path to your data path
 
 all_files = glob.glob(path + "*.csv")
 
