@@ -11,8 +11,6 @@ import dash_bootstrap_components as dbc  # pip install dash-bootstrap-components
 from datetime import date
 import plotly.express as px
 
-import boto3
-
 # from wordcloud import wordcloud
 
 
